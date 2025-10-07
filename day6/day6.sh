@@ -1,0 +1,1 @@
+uvicorn day6:app --reload

@@ -1,0 +1,8 @@
+{
+    "BERT": {
+        "time_seconds": 0.807563066482544
+    },
+    "DistilBERT": {
+        "time_seconds": 0.4662361145019531
+    }
+}
