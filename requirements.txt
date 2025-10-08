@@ -43,6 +43,7 @@ tokenizers==0.22.1
 torch==2.8.0
 tqdm==4.67.1
 transformers==4.57.0
+types-pytz==2025.2.0.20250809
 typing-inspection==0.4.2
 typing_extensions==4.15.0
 tzdata==2025.2
