@@ -1,1 +1,0 @@
-pytest /Users/m1macmini3/Desktop/Python/PythonWeekTwo/Py-week-two/day6/task_test.py

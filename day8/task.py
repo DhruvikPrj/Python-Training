@@ -1,4 +1,4 @@
-# day1/task.py
+# day8/task.py
 from transformers import pipeline
 
 def analyze_sentiment(text: str) -> dict:

@@ -1,14 +1,14 @@
-# day2/task_test.py
+# day9/task_test.py
 import pytest
 from unittest.mock import patch, MagicMock
 import requests
-import day2.task as task
+import day9.task as task
 from requests.exceptions import RequestException
 
 # -----------------------------
 # 1️⃣ Test fetch_article success
 # -----------------------------
-@patch("day2.task.requests.get")
+@patch("day9.task.requests.get")
 def test_fetch_article_success(mock_get):
     # Mock a successful Wikipedia response
     mock_response = MagicMock()
@@ -23,7 +23,7 @@ def test_fetch_article_success(mock_get):
 # -----------------------------
 # 2️⃣ Test fetch_article failure
 # -----------------------------
-@patch("day2.task.requests.get")
+@patch("day9.task.requests.get")
 def test_fetch_article_failure(mock_get):
     # Mock raising RequestException
     mock_get.side_effect = RequestException("Network error")
@@ -35,7 +35,7 @@ def test_fetch_article_failure(mock_get):
 # -----------------------------
 # 3️⃣ Test summarize_text
 # -----------------------------
-@patch("day2.task.pipeline")
+@patch("day9.task.pipeline")
 def test_summarize_text(mock_pipeline):
     # Mock the Hugging Face summarizer
     mock_summarizer = MagicMock()
@@ -50,8 +50,8 @@ def test_summarize_text(mock_pipeline):
 # -----------------------------
 # 4️⃣ Test main function (success path)
 # -----------------------------
-@patch("day2.task.fetch_article")
-@patch("day2.task.summarize_text")
+@patch("day9.task.fetch_article")
+@patch("day9.task.summarize_text")
 def test_main_success(mock_summarize, mock_fetch):
     mock_fetch.return_value = "Article text about AI."
     mock_summarize.return_value = "Summary text about AI."
@@ -67,7 +67,7 @@ def test_main_success(mock_summarize, mock_fetch):
 # -----------------------------
 # 5️⃣ Test main function (no article found)
 # -----------------------------
-@patch("day2.task.fetch_article")
+@patch("day9.task.fetch_article")
 def test_main_no_article(mock_fetch):
     mock_fetch.return_value = None
     with patch("builtins.print") as mock_print:

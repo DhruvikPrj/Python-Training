@@ -1,9 +1,9 @@
-# day1/task_test.py
+# day8/task_test.py
 import pytest
 from unittest.mock import patch, MagicMock
 from . import task  # relative import works
 
-@patch("day1.task.pipeline")
+@patch("day8.task.pipeline")
 def test_analyze_sentiment(mock_pipeline):
     # pipeline() returns a callable
     mock_sentiment = MagicMock()
@@ -14,7 +14,7 @@ def test_analyze_sentiment(mock_pipeline):
     assert result["label"] == "POSITIVE"
     assert result["score"] == 0.99
 
-@patch("day1.task.pipeline")
+@patch("day8.task.pipeline")
 def test_summarize_text(mock_pipeline):
     mock_summarizer = MagicMock()
     mock_summarizer.return_value = [{"summary_text": "Hugging Face is amazing for AI models."}]
@@ -23,7 +23,7 @@ def test_summarize_text(mock_pipeline):
     summary = task.summarize_text("Some text")
     assert summary == "Hugging Face is amazing for AI models."
 
-@patch("day1.task.pipeline")
+@patch("day8.task.pipeline")
 def test_generate_text(mock_pipeline):
     mock_generator = MagicMock()
     mock_generator.return_value = [{"generated_text": "Once upon a time, a unicorn appeared."}]
