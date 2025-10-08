@@ -1,0 +1,28 @@
+python -m venv ai-env
+source ai-env/bin/activate   # Mac/Linux
+ai-env\Scripts\activate
+
+Python file structure & script execution
+
+Har project ke liye alag folder structure rakho.
+
+Example:
+
+project/
+├── ai-env/      ← virtual environment
+├── main.py      ← Python script
+├── requirements.txt
+
+
+**** Run karne ke liye:
+
+python main.py
+
+====> pip ka use karke external libraries install karte hain.
+
+Example: pip install fastapi uvicorn pandas
+
+=====> Print Python version & list installed packages 
+
+python --version
+pip list
