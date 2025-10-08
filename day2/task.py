@@ -1,7 +1,7 @@
 # fetch data from file
 import pandas as pd
 
-df = pd.read_csv("/Users/m1macmini3/Desktop/PythonProject/day2/students.csv")
+df = pd.read_csv("/Users/m1macmini3/Desktop/Python/PythonWeekTwo/Py-week-two/day2/students.csv")
 
 def get_older_students(age_limit):
     """Returns list of students older than given age_limit"""
