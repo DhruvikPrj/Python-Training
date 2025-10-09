@@ -82,3 +82,6 @@ hf_home/
 # Others
 *.sqlite3
 *.db
+
+htmlcov
+.coverage
