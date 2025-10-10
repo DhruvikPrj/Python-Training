@@ -48,3 +48,11 @@ def run_text2text(prompt):
 
 prompt = "Summarize the following text: Staying active and eating healthy are crucial steps towards maintaining a healthy weight and improving overall well-being. By following a healthy lifestyle, one can enhance their physical, mental, and emotional health, leading to a better quality of life. In this article, we will explore the benefits of staying active and eating healthy and provide tips to incorporate these habits into your daily routine."
 print(run_text2text(prompt))
+
+
+# Concept	            Explanation
+
+# Prompt Template	    A structured sentence with placeholders like {text} or {summary}.
+# Sequential Chain	    Output from one model → Input to another.
+# FLAN-T5	            Google’s fine-tuned text2text model (open-source alternative to GPT).
+# Chaining Logic	    Connects model tasks logically for multi-step pipelines.

@@ -1,4 +1,4 @@
-# test_task.py
+# test_task.sh.py
 import pytest
 from transformers import pipeline
 
