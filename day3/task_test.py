@@ -1,4 +1,4 @@
-# day3/test_task.py
+# day3/test_task.sh.py
 import pytest
 from unittest.mock import patch
 from day3.task import get_weather, extract_info, save_to_file, read_from_file

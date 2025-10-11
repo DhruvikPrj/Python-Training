@@ -1,0 +1,23 @@
+        ┌────────────────────────────────────────────┐
+        │           Your Documents (PDFs, etc.)      │
+        └────────────────────────────────────────────┘
+                            │
+                            ▼
+                [1] Text Chunking & Embeddings
+                            │
+                            ▼
+        ┌────────────────────────────────────────────┐
+        │     Vector Database (FAISS / Chroma / etc.)│
+        └────────────────────────────────────────────┘
+                            │
+                            ▼
+        [2] User Query → Convert to Embedding
+                            │
+                            ▼
+        [3] Retrieve Top Relevant Chunks
+                            │
+                            ▼
+        [4] Combine with Query → Augmented Prompt
+                            │
+                            ▼
+        [5] LLM Generates Final Answer

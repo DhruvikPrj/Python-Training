@@ -1,0 +1,1 @@
+python /Users/m1macmini3/Desktop/Python/Python-Training/day20/day20.py

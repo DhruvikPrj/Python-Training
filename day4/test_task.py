@@ -1,4 +1,4 @@
-# day4/test_task.py
+# day4/test_task.sh.py
 import pytest
 from fastapi.testclient import TestClient
 from day4.task import app  # Make sure day4 has __init__.py to be treated as a package

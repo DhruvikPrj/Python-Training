@@ -1,0 +1,15 @@
+[PDF]
+   ↓
+[PyPDFLoader] → [Text Splitter] → [Embeddings via HuggingFace]
+   ↓
+[FAISS Vector DB] ← store all embeddings
+   ↓
+[User Question]
+   ↓
+[Similarity Search in FAISS] → top chunks
+   ↓
+[LLM Prompt] → "Context + Question"
+   ↓
+[LLM Output] → Answer
+   ↓
+[FastAPI JSON Response]
