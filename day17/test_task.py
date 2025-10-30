@@ -79,7 +79,7 @@ def test_summarize_text(mock_model_tokenizer):
 @patch("task.load_model")
 @patch("task.summarize_text")
 def test_summarize_document(mock_sum, mock_load_model, mock_split, mock_load_pdf, mock_docs):
-    """Full pipeline test — ensures chain of calls works."""
+    """Full pipeline test.sh — ensures chain of calls works."""
     mock_load_pdf.return_value = mock_docs
     mock_split.return_value = mock_docs
     mock_load_model.return_value = ("mock_tokenizer", "mock_model")

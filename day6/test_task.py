@@ -5,7 +5,7 @@ from day6.task import app, engine, SQLModel, Task
 # Use TestClient to run tests
 client = TestClient(app)
 
-# Run before each test: recreate tables
+# Run before each test.sh: recreate tables
 @pytest.fixture(autouse=True)
 def setup_db():
     SQLModel.metadata.drop_all(engine)

@@ -12,7 +12,7 @@ def session_fixture():
     SQLModel.metadata.create_all(engine)
     with Session(engine) as session:
         yield session
-    # Teardown: drop tables after test
+    # Teardown: drop tables after test.sh
     SQLModel.metadata.drop_all(engine)
 
 def test_create_book(db_session):
