@@ -3,7 +3,7 @@
 # The datasets library is like a giant toy box of ready-to-use datasets. You can:
 # Load datasets instantly (IMDB, SST-2, MNIST, etc.)
 
-# Sample or split data easily (train/test)
+# Sample or split data easily (train/test.sh)
 # Process data in batches for fast training or analysis
 # Basically, it saves you from downloading CSVs and cleaning data manually.
 

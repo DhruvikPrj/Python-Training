@@ -1,0 +1,1 @@
+pytest --cov=task --cov-report=html test_app.py

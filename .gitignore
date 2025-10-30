@@ -38,7 +38,7 @@ env/
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# Unit test.sh / coverage reports
 htmlcov/
 .tox/
 .nox/
@@ -61,7 +61,6 @@ coverage.xml
 *.ipr
 
 # VS Code
-.vscode/
 
 # macOS
 .DS_Store
@@ -85,3 +84,6 @@ hf_home/
 
 htmlcov
 .coverage
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore

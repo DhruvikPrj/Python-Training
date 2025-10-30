@@ -31,7 +31,7 @@ def test_get_weather(mock_get):
     assert result["current"]["temp_c"] == 32
 
 def test_save_and_read_file(tmp_path):
-    # Use temporary file for test
+    # Use temporary file for test.sh
     file_path = tmp_path / "weather.json"
 
     save_to_file(fake_api_response, file_path)

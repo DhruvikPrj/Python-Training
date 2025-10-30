@@ -12,12 +12,12 @@ from requests.exceptions import RequestException
 def test_fetch_article_success(mock_get):
     # Mock a successful Wikipedia response
     mock_response = MagicMock()
-    mock_response.json.return_value = {"extract": "This is a test article about AI."}
+    mock_response.json.return_value = {"extract": "This is a test.sh article about AI."}
     mock_response.raise_for_status.return_value = None
     mock_get.return_value = mock_response
 
     article = task.fetch_article("Artificial intelligence")
-    assert article == "This is a test article about AI."
+    assert article == "This is a test.sh article about AI."
     mock_get.assert_called_once()  # Ensure HTTP GET was called
 
 # -----------------------------

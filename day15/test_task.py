@@ -58,8 +58,8 @@ def test_main_with_different_output(capsys):
     captured = capsys.readouterr()
     assert "Polite Sentence: Could you kindly submit the report by tomorrow?" in captured.out
 
-# For failure tests, since globals are already loaded, we can't easily test loading failures
-# But to cover scenarios, perhaps test if generate raises, but since model is mocked, we can set side_effect
+# For failure tests, since globals are already loaded, we can't easily test.sh loading failures
+# But to cover scenarios, perhaps test.sh if generate raises, but since model is mocked, we can set side_effect
 def test_main_generate_failure():
     # Test if generate fails
     mock_tokenizer = MagicMock()
